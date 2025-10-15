@@ -3,7 +3,7 @@
   const translations = {
     ru: {
       title: "Отркытый код ФКН",
-      lead: "Проект с открытым исходным кодом ФКН (НИУ ВШЭ)",
+      lead: "Проект с открытым исходным кодом ФКН",
       language_label: "Язык",
       theme_label: "Тема",
       search_label: "Поиск проектов",
@@ -17,7 +17,7 @@
     },
     en: {
       title: "HSE CS Open Source Project",
-      lead: "A clean, self-maintained list of current and past projects from the Faculty of Computer Science.",
+      lead: "A list of open-source projects from the Faculty of Computer Science.",
       language_label: "Language",
       theme_label: "Theme",
       search_label: "Search projects",
