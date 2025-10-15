@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Optional: override posts.json path -->
+  <meta name="posts-json" content="">
+  <title data-i18n="title">Отркытый код ФКН</title>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="themes/themes.css">
+  <link rel="preload" as="fetch" href="data/posts.json" >
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 data-i18n="title">Отркытый код ФКН</h1>
+      <p class="lead" data-i18n="lead">Проект с открытым исходным кодом ФКН (НИУ ВШЭ)</p>
+      <div class="controls">
+        <label class="visually-hidden" for="lang" data-i18n="language_label">Язык</label>
+        <select id="lang" aria-label="Language">
+          <option value="ru">Русский</option>
+          <option value="en">English</option>
+        </select>
+
+        <label class="visually-hidden" for="theme" data-i18n="theme_label">Тема</label>
+        <select id="theme" aria-label="Theme">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="tokyo">Tokyo Blue</option>
+          <option value="mint">Mint</option>
+        </select>
+
+        <div class="search">
+          <label class="visually-hidden" for="q" data-i18n="search_label">Поиск проектов</label>
+          <input id="q" type="search" data-i18n-placeholder="search_placeholder" placeholder="Поиск проектов…" autocomplete="off" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="posts-fallback" class="notice" hidden>
+      <strong id="local-note">Не найден data/posts.json. Выберите posts.json вручную:</strong><br>
+      <input type="file" id="posts-file" accept="application/json,.json">
+      <div id="posts-error" style="margin-top:.5rem;font-size:.9rem;"></div>
+    </div>
+    <ul class="projects" id="projects" role="list"></ul>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p id="footer-text">© <span id="year"></span> Отркытый код ФКН <a href="https://t.me/hse_cs_opensource" target="_blank" rel="noopener">Telegram</a> <a href="https://github.com/hse-cs" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script defer src="assets/js/app.js"></script>
+</body>
+</html>
